@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Testing CLass Based Views on BASED PAGE</title>
+  </head>
+  <body>
+    <h1>NAVBAR</h1>
+    <nav>
+        <ul>
+          <li><a href="{% url 'college_app:list' %}">Schools</a></li>
+          <li><a href="{% url 'admin:index' %}">Admin</a></li>
+          <li><a href="#"></a></li>
+        </ul>
+    </nav>
+    <div>
+      {% block body_block %}
+
+      {% endblock %}
+  </divs>
+  </body>
+</html>
